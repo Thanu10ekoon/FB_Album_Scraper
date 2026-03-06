@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.container {
+  padding: 16px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4fc3f7;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.message {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.message p {
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.hint {
+  font-size: 12px !important;
+  color: #777 !important;
+}
+
+.hint code {
+  background: #2a2a4a;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.album-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 4px;
+}
+
+.photo-count {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.controls {
+  margin-bottom: 12px;
+}
+
+.controls label {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.controls label span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.controls input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #16213e;
+  color: #e0e0e0;
+  font-size: 13px;
+  outline: none;
+}
+
+.controls input:focus {
+  border-color: #4fc3f7;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #4fc3f7;
+  color: #1a1a2e;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #39a8db;
+}
+
+.btn-secondary {
+  background: #2a2a4a;
+  color: #4fc3f7;
+  border: 1px solid #4fc3f7;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #333366;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #2a2a4a;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4fc3f7, #0288d1);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+.status {
+  margin-top: 8px;
+  font-size: 12px;
+  text-align: center;
+  min-height: 18px;
+}
+
+.status.error {
+  color: #ef5350;
+}
+
+.status.success {
+  color: #66bb6a;
+}
+
+.status.info {
+  color: #4fc3f7;
+}
+
+#progress-section {
+  margin-top: 8px;
+}

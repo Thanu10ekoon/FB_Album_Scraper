@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB Album Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FB Album Downloader</h1>
+
+    <div id="not-facebook" class="message hidden">
+      <p>Navigate to a Facebook page and open a photo to use this extension.</p>
+      <p class="hint">Open the first photo in the album, then click this extension.</p>
+    </div>
+
+    <div id="album-panel" class="hidden">
+      <div id="album-info">
+        <p id="album-name" class="album-name">Detecting album...</p>
+        <p id="photo-count" class="photo-count"></p>
+      </div>
+
+      <div class="controls">
+        <label>
+          <span>Folder name:</span>
+          <input type="text" id="folder-name" placeholder="Album name">
+        </label>
+      </div>
+
+      <button id="scan-btn" class="btn btn-secondary">Scan for Photos</button>
+      <button id="download-btn" class="btn btn-primary" disabled>Download All</button>
+
+      <div id="progress-section" class="hidden">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="progress-text" class="progress-text">0 / 0</p>
+      </div>
+
+      <div id="status" class="status"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
