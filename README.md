@@ -2,6 +2,12 @@
 
 Download all photos from a Facebook album page in one batch.
 
+<a href="https://ibb.co/svT8VWxq">
+  <img src="https://i.ibb.co/svT8VWxq/Gemini-Generated-Image-a8ozzga8ozzga8oz.png"
+       alt="Gemini-Generated-Image-a8ozzga8ozzga8oz"
+       style="width:auto; height:auto; max-width:none;">
+</a>
+
 This extension is designed around Facebook's photo viewer (lightbox) so it can capture full-resolution image URLs instead of only grid thumbnails.
 
 ## Features
